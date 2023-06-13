@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -46,11 +50,11 @@
     font-size: 9rem;
 }
 
-.emoji:hover {
+/* .emoji:hover {
     background-color: rgb(49, 48, 47);
     border-radius: 15px;
     cursor: pointer;
-}
+} */
 
 .head2 {
     color: rgb(236, 159, 15);
@@ -58,4 +62,21 @@
     font-size: 1.3rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+.name {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.emojiDiv {
+}
+
+.emojiDiv:hover {
+    background-color: rgb(49, 48, 47);
+    border-radius: 15px;
+    cursor: pointer;
+
 }
