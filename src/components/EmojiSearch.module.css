@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+
+.head {
+    color: white;
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+.inp {
+    width: 20vw;
+    height: 7vh;
+    border: none;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+.inp[placeholder] {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.match {
+    font-family: cursive;
+    color: white;
+}
+
+.emojiContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.emoji {
+    font-size: 9rem;
+}
+
+.emoji:hover {
+    background-color: rgb(49, 48, 47);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.head2 {
+    color: rgb(236, 159, 15);
+    font-family: cursive;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
