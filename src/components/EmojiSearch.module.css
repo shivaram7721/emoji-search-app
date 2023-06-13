@@ -80,3 +80,23 @@
     cursor: pointer;
 
 }
+
+@media screen and (max-width: 500px) {
+
+    .inp {
+        width: 50vw;
+    }
+
+    .inp[placeholder] {
+        padding-left: .7rem;
+        font-size: 1.2rem;
+    }
+
+    .emoji {
+        font-size: 4rem;
+    }
+
+    .name {
+        font-size: .8rem;
+    }
+}
