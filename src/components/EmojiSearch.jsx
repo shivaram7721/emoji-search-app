@@ -44,12 +44,6 @@ export function EmojiSearch() {
     
   };
   
-  
-
-  console.log(emojiList)
-  console.log(searchedEmojis)
-  console.log(emojiDictionary)
-
   return (
     <div className={styles.main}>
       <div>
@@ -65,7 +59,10 @@ export function EmojiSearch() {
               <h2 className={styles.match}>No match☹️</h2>
             ) : (
               searchedEmojis.map((emoji, index) => (
-                <p className={styles.emoji} onClick={() => handleCopyEmoji(emojiDictionary.getUnicode(emoji))} key={index}>{emojiDictionary.getUnicode(emoji)}</p>
+                <div key={index} className={styles.emojiDiv}>
+                  <p className={styles.emoji} onClick={() => handleCopyEmoji(emojiDictionary.getUnicode(emoji))}>{emojiDictionary.getUnicode(emoji)}</p>
+                  <p className={styles.name}>{emoji}</p>
+                </div>
             ))
             )
         }
