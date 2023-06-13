@@ -62,7 +62,7 @@ export function EmojiSearch() {
       <div className={styles.emojiContainer}>
         {
             searchedEmojis.length === 0 ? (
-              <h2 className={styles.match}>No match😂</h2>
+              <h2 className={styles.match}>No match☹️</h2>
             ) : (
               searchedEmojis.map((emoji, index) => (
                 <p className={styles.emoji} onClick={() => handleCopyEmoji(emojiDictionary.getUnicode(emoji))} key={index}>{emojiDictionary.getUnicode(emoji)}</p>
